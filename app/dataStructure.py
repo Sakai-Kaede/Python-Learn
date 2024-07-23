@@ -28,3 +28,12 @@ print(items) # ['note', 'notebook', 'sketchbook', 'paperbook']と表示される
 
 del items[1]
 print(items)# ['note', 'sketchbook', 'paperbook']と表示される
+
+# tuple型
+
+# tuple型は定義後に要素を変更できない
+items = ('note', 'notebook', 'sketchbook')
+
+# listとtupleの使い分け
+
+# アプリケーション内の設定値など作成時の組み合わせが変化しないものはtupleを使う
