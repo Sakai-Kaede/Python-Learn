@@ -29,6 +29,7 @@ print(items) # ['note', 'notebook', 'sketchbook', 'paperbook']と表示される
 del items[1]
 print(items)# ['note', 'sketchbook', 'paperbook']と表示される
 
+
 # tuple型
 
 # tuple型は定義後に要素を変更できない
@@ -37,3 +38,18 @@ items = ('note', 'notebook', 'sketchbook')
 # listとtupleの使い分け
 
 # アプリケーション内の設定値など作成時の組み合わせが変化しないものはtupleを使う
+
+
+# dict型
+
+items = {'note': 1, 'notebook': 2, 'sketchbook': 3}
+
+items['book'] = 4 # 要素を追加
+
+items.pop('notebook') # 要素を取り出して辞書から削除
+del items['sketchbook'] # 要素を削除
+
+print(items) # {'note': 1, 'book': 4}と表示される
+
+# キーを指定して、値を取り出す
+print(items['note']) # 1が表示される
